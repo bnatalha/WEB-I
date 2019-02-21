@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Tarefa 1</title>
+
+	<style>
+	table, td, th {
+	  border: 1px solid black;
+	}
+
+	table {
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+
+	th {
+	  text-align: left;
+	}
+	</style>
+  
+  <script> 
+    function teste(){
+      document.getElementById("test").innerHTML = 'funcionou'
+    }
+  </script>
+
+</head>
+<body>
+	<!-- lista em tabela -->
+	<h2>to-do list v1</h1>
+	<table id="tabela">
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Responsável</th>
+			<th>Prazo</th>
+		</tr>
+		<tr>
+			<td>Primeira tarefa de WEB I</td>
+			<td>Implementar HTML de TODO list</td>
+			<td>Natalia</td>
+			<td>26/02/2019</td>
+			<td><button type="button" onclick="del_table_li()">DEL</button><button>EDIT</button></td>
+		</tr>
+	</table>
+
+	<!-- formulario para adicionar tarefa -->
+	<form>
+		<h3>Adicionar nova tarefa </h3>
+		<input type="text" name="nome_tarefa" placeholder="nome da tarefa">
+		<input type="text" name="desc_tarefa" placeholder="descrição da tarefa">
+		<input type="text" name="resp_tarefa" placeholder="responsável pela tarefa">
+		<input type="text" name="data_tarefa" placeholder="prazo de entrega da tarefa">
+		<button type="submit" value="Submit">adicionar</button>
+	</form>
+  
+  <p id="test">
+    testando
+  </p>
+  <button type="button" onclick="add_tag()">ação</button>
+
+</body>
+<html>
